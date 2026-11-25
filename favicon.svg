@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Mile Marker Laundry">
+  <rect width="32" height="32" rx="4" fill="#121212"/>
+  <rect x="14.25" y="22" width="3.5" height="7" fill="#8d8d86"/>
+  <rect x="6" y="3" width="20" height="20" rx="2" fill="#006747"/>
+  <rect x="7.75" y="4.75" width="16.5" height="16.5" rx="1.2" fill="none" stroke="#F4F4EF" stroke-width="1.4"/>
+  <rect x="11" y="7.2" width="10" height="5.2" rx="0.7" fill="none" stroke="#F4F4EF" stroke-width="1.2"/>
+  <circle cx="16" cy="9.8" r="1.35" fill="none" stroke="#F4F4EF" stroke-width="1.1"/>
+  <rect x="11" y="13.6" width="10" height="5.2" rx="0.7" fill="none" stroke="#F4F4EF" stroke-width="1.2"/>
+  <circle cx="16" cy="16.2" r="1.35" fill="none" stroke="#F4F4EF" stroke-width="1.1"/>
+</svg>

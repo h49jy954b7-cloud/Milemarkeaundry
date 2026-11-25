@@ -290,7 +290,7 @@ a:hover {
 }
 
 .section-pay,
-.section-contact {
+.section-reach {
   background: var(--asphalt);
 }
 
@@ -543,7 +543,17 @@ address {
   border: 0;
 }
 
-.section-contact .section-head {
+.section-reach .section-head {
+  margin-bottom: 1.2rem;
+}
+
+.reach-grid {
+  display: grid;
+  gap: 2.75rem;
+}
+
+.partner-copy {
+  color: var(--muted);
   margin-bottom: 1.2rem;
 }
 
@@ -669,7 +679,6 @@ address {
   .store-btn-name {
     font-size: 0.78rem;
   }
-}
 
   .location-grid {
     grid-template-columns: minmax(16rem, 0.85fr) minmax(0, 1.3fr);
@@ -679,6 +688,12 @@ address {
   .map-frame {
     height: auto;
     min-height: 22rem;
+  }
+
+  .reach-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
   }
 }
 

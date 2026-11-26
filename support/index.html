@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report an Issue | Mile Marker Laundry</title>
+  <meta name="description" content="Report a problem with a Mile Marker Laundry machine. We'll get back to you as soon as we can.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://milemarkerlaundry.com/support/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#006747">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="/">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="36" height="36" focusable="false">
+            <rect x="13.5" y="23" width="5" height="7" fill="#8d8d86"/>
+            <rect x="5" y="1" width="22" height="23" rx="2" fill="#006747"/>
+            <rect x="7" y="3" width="18" height="19" rx="1.2" fill="none" stroke="#F4F4EF" stroke-width="1.5"/>
+            <rect x="10.5" y="6" width="11" height="5.6" rx="0.8" fill="none" stroke="#F4F4EF" stroke-width="1.3"/>
+            <circle cx="16" cy="8.8" r="1.4" fill="none" stroke="#F4F4EF" stroke-width="1.2"/>
+            <rect x="10.5" y="13.2" width="11" height="5.6" rx="0.8" fill="none" stroke="#F4F4EF" stroke-width="1.3"/>
+            <circle cx="16" cy="16" r="1.4" fill="none" stroke="#F4F4EF" stroke-width="1.2"/>
+          </svg>
+        </span>
+        <span class="logo-word">
+          <span class="logo-name">Mile Marker</span>
+          <span class="logo-sub">Laundry</span>
+        </span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="/#prices">Prices</a></li>
+          <li><a href="/#pay">How to pay</a></li>
+          <li><a href="/#location">Location</a></li>
+          <li><a href="/#partner">Partner</a></li>
+          <li><a href="/#contact">Contact</a></li>
+          <li><a href="/support/">Report an Issue</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section section-pay" aria-labelledby="support-title">
+      <div class="wrap support-wrap">
+        <header class="section-head">
+          <p class="sign-chip">Support</p>
+          <h1 id="support-title">Report an issue</h1>
+        </header>
+        <p class="support-fallback">Having trouble with a machine? Let us know and we'll get back to you as soon as we can.</p>
+        <p class="support-fallback"><a href="mailto:milemarkerlaundry@gmail.com">Or email us</a></p>
+        <form id="issue-form" class="support-form" action="https://formsubmit.co/milemarkerlaundry@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Mile Marker Laundry - machine issue report">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="true">
+          <input type="hidden" name="_next" value="https://milemarkerlaundry.com/support/thanks/">
+          <input class="support-honey" type="text" name="_honey" tabindex="-1" autocomplete="off">
+
+          <div class="support-field">
+            <label for="name">Name</label>
+            <input id="name" name="Name" type="text" autocomplete="name" required>
+          </div>
+          <div class="support-field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="Phone" type="tel" autocomplete="tel" inputmode="tel" required>
+          </div>
+          <div class="support-field">
+            <label for="email">Email</label>
+            <input id="email" name="Email" type="email" autocomplete="email" required>
+          </div>
+          <div class="support-field">
+            <label for="machine">Machine number</label>
+            <select id="machine" name="Machine number">
+              <option value="">Select a machine</option>
+              <option value="Stack 1">Stack 1</option>
+              <option value="Stack 2">Stack 2</option>
+              <option value="Stack 3">Stack 3</option>
+              <option value="Stack 4">Stack 4</option>
+              <option value="Not sure">Not sure</option>
+            </select>
+          </div>
+          <div class="support-field">
+            <label for="issue">Issue type</label>
+            <select id="issue" name="Issue type">
+              <option value="">Select an issue</option>
+              <option value="Machine didn't start">Machine didn't start</option>
+              <option value="Payment/app charged but no cycle">Payment/app charged but no cycle</option>
+              <option value="Machine stopped mid-cycle">Machine stopped mid-cycle</option>
+              <option value="Dryer not heating">Dryer not heating</option>
+              <option value="Water/leak">Water/leak</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="support-field">
+            <label for="description">Brief description</label>
+            <textarea id="description" name="Brief description" required></textarea>
+          </div>
+          <button class="email-sign" type="submit">Send report</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="footer-name">Mile Marker Laundry</p>
+      <p>Leatherman Works LLC dba Mile Marker Laundry</p>
+      <p>2201 Taft Hwy, Bakersfield, CA 93313</p>
+      <p><a href="/support/">Report an Issue</a></p>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var form = document.getElementById("issue-form");
+
+      function fill(fieldName, value) {
+        if (!value) return;
+        var field = form.elements[fieldName];
+        if (!field) return;
+        if (field.options) {
+          for (var i = 0; i < field.options.length; i++) {
+            if (field.options[i].value === value) {
+              field.value = value;
+              return;
+            }
+          }
+          return;
+        }
+        field.value = value;
+      }
+
+      var machine = params.get("m");
+      if (/^[1-4]$/.test(machine || "")) {
+        fill("Machine number", "Stack " + machine);
+      }
+      fill("Name", params.get("name"));
+      fill("Phone", params.get("phone"));
+      fill("Email", params.get("email"));
+      fill("Issue type", params.get("issue"));
+    })();
+  </script>
+</body>
+</html>
